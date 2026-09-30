@@ -1,6 +1,7 @@
 # parts.py
 
 class Board:
+    field_size = 3
     def __init__(self):
         self.board = [[' ' for _ in range(3)] for _ in range(3)]
 
@@ -11,3 +12,5 @@ class Board:
         for row in self.board:
             print('|'.join(row))
             print('-' * 5)
+
+      
